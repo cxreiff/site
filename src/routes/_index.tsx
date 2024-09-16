@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 
 import logoLight from "/resources/logo-light.png";
 import logoDark from "/resources/logo-dark.png";
@@ -10,7 +11,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export default function Route() {
   return (
     <div className="flex h-screen items-center justify-center">
       <div className="flex flex-col items-center gap-16">
@@ -51,6 +52,11 @@ export default function Index() {
             ))}
           </ul>
         </nav>
+        <div>
+          <Link to="second" className="text-red-800 hover:text-red-950 hover:underline">
+            alternate route
+          </Link>
+        </div>
       </div>
     </div>
   );
