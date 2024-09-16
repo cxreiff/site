@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "typecheck": "tsc"
   },
+  "packageManager": "pnpm@9",
   "dependencies": {
     "@remix-run/node": "^2.12.0",
     "@remix-run/react": "^2.12.0",

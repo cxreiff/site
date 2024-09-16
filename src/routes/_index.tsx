@@ -1,5 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
 
+import logoLight from "/resources/logo-light.png";
+import logoDark from "/resources/logo-dark.png";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -17,12 +20,12 @@ export default function Index() {
           </h1>
           <div className="h-[144px] w-[434px]">
             <img
-              src="/logo-light.png"
+              src={logoLight}
               alt="Remix"
               className="block w-full dark:hidden"
             />
             <img
-              src="/logo-dark.png"
+              src={logoDark}
               alt="Remix"
               className="hidden w-full dark:block"
             />
